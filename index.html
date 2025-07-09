@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spike</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Навигация -->
+<nav>
+    <div class="nav-container container">
+        <a href="#hero" class="logo">Spike</a>
+
+        <!-- Desktop Navigation -->
+        <div class="desktop-nav">
+            <a href="#about" class="nav-link">Обо мне</a>
+            <a href="#projects" class="nav-link">Проекты</a>
+            <a href="#contact" class="nav-link">Контакты</a>
+            <a href="https://spb.hh.ru/resume/5d409c03ff0efd9fbf0039ed1f476b636b7031" class="resume-btn">Резюме</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <p class="hero-subtitle">Привет, меня зовут</p>
+            <h1 class="hero-title">Владислав</h1>
+            <h2 class="hero-subtitle-large">Я создаю веб-приложения.</h2>
+            <p class="hero-description">
+                Cпециализируюсь на разработке доступных, удобных и визуально чистых интерфейсов, которые ставят
+                пользователя
+                в центр внимания. Моя цель — превращать идеи в качественные цифровые продукты, которые работают быстро и
+                выглядят стильно на любых устройствах.
+            </p>
+            <a href="#projects" class="projects-btn">Посмотреть проекты</a>
+        </div>
+        <img src="./assets/img/helmet.svg" alt="helmet" class="hero-img">
+    </div>
+</section>
+
+<!-- Обо мне -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">
+            <span>01.</span>Обо мне
+        </h2>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    Мой путь в веб-разработке начался в 2024 году, когда я впервые попробовал собрать собственный сайт —
+                    с тех пор
+                    это стало не просто хобби, а настоящей страстью.
+                </p>
+                <p>
+                    Я стремлюсь создавать удобные, доступные и визуально привлекательные приложения, которые приносят
+                    реальную пользу пользователям. В процессе разработки для меня важны внимание к деталям, чистота кода
+                    и постоянный рост.
+                </p>
+                <br>
+                <br>
+                <p class="tech-title">Вот несколько технологий, с которыми я работаю:</p>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span>-</span>
+                        <span>JavaScript (ES6+)</span>
+                    </div>
+                    <div class="tech-item">
+                        <span>-</span>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-item">
+                        <span>-</span>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <span>-</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <span>-</span>
+                        <span>Figma</span>
+                    </div>
+                    <div class="tech-item">
+                        <span>-</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-container">
+                <img class="photo--avatar" src="assets/img/avatar.jpg" alt="avatar">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Проекты -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">
+            <span>02.</span>Учебные проекты
+        </h2>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="project-image--six-cities" src="assets/img/six-cities.jpg" alt="six-cities">
+                </div>
+                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-six-cities-3">
+                    <h3>Six-cities</h3>
+                    <p> «Шесть городов» — сервис для путешественников, не желающих переплачивать за аренду жилья.
+                        Выбирайте один из шести популярных городов для путешествий и получайте актуальный список
+                        предложений по аренде. Подробная информация о жилье, показ объекта на карте, а также лаконичный
+                        интерфейс сервиса помогут быстро выбрать оптимальное предложение.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Typescript</span>
+                        <span>JavaScript</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="project-image--bit-trip" src="assets/img/big-trip.png" alt="big-trip">
+                </div>
+                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-big-trip-2">
+                    <h3>Big trip </h3>
+                    <p>«Большое путешествие» — современный сервис для настоящих путешественников. Сервис помогает
+                        детально спланировать маршрут поездки, рассчитать стоимость путешествия и получить информацию о
+                        достопримечательностях. Минималистичный интерфейс не даст повода отвлечься и сфокусирует
+                        внимание на планировании путешествия.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="project-image--kekstagram" src="assets/img/kekstagram.jpg" alt="kekstagram">
+                </div>
+                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-kekstagram-kvs">
+                    <h3>Kekstagram</h3>
+                    <p>«Кекстаграм» — сервис просмотра изображений. Пользователям предоставлена возможность загружать
+                        свои фотографии или просматривать фотографии, загруженные ранее другими пользователями.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="project-image--sedona" src="assets/img/sedona.jpg" alt="sedona">
+                </div>
+                <div class="project-overlay">
+                    <h3>Sedona</h3>
+                    <p>«Седона» — проект о небольшом городке в Аризоне для поиска гостинницы.</p>
+                    <div class="project-tech">
+                        <span>HTML5/CSS3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">
+            <span>03.</span>Личные проекты
+        </h2>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="project-image--six-cities" src="assets/img/six-cities.jpg" alt="six-cities">
+                </div>
+                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-six-cities-3">
+                    <h3>Flowboard</h3>
+                    <p></p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Typescript</span>
+                        <span>JavaScript</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="project-image--bit-trip" src="assets/img/big-trip.png" alt="big-trip">
+                </div>
+                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-big-trip-2">
+                    <h3>Git flipper</h3>
+                    <p></p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Typescript</span>
+                        <span>JavaScript</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="project-image--kekstagram" src="assets/img/kekstagram.jpg" alt="kekstagram">
+                </div>
+                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-kekstagram-kvs">
+                    <h3>Memory</h3>
+                    <p></p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card project-card__empty">
+                <span> Coming soon... </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-container">
+            <p class="contact-subtitle">Что дальше?</p>
+            <h2 class="contact-title">Свяжитесь со мной</h2>
+            <p class="contact-description">
+                В настоящее время я открыт для новых возможностей, особенно для интересных проектов.
+                Если у вас есть предложение или просто хотите поздороваться — я постараюсь ответить как можно скорее!
+            </p>
+            <a href="mailto:spike.kvs@gmmail.com" class="contact-btn">Написать мне</a>
+        </div>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://github.com/SpikeJnR" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://t.me/Spike_zet" aria-label="Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="mailto:spike.kvs@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <div class="link-email"> Почта для связи: <span class="highlight">spike.kvs@gmail.com</span></div>
+        <p class="footer-text">Разработано ️ Spike</p>
+        <p class="copyright">© 2025. Все права защищены.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+<div class="cursor-outline"></div>
+</body>
+</html>
