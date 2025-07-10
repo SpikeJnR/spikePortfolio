@@ -54,6 +54,11 @@ nav {
     font-family: 'Fira Code', monospace;
     font-size: 2rem;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .desktop-nav {
@@ -99,7 +104,8 @@ nav {
 }
 
 .resume-btn:hover {
-    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--dark);
+    background-color: var(--primary);
 }
 
 /* Hero Section */
@@ -109,7 +115,6 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 16px 24px;
-    padding-top: 80px;
 }
 
 .hero-content {
@@ -152,6 +157,11 @@ nav {
     height: 1200px;
     transform: rotateY(180deg);
 }
+
+.projects {
+    padding-top: 100px;
+}
+
 .projects-btn {
     padding: 12px 24px;
     border: 1px solid var(--primary);
@@ -169,9 +179,6 @@ nav {
 }
 
 /* Section Styles */
-section {
-    padding: 80px 24px;
-}
 
 .section-title {
     display: flex;
@@ -201,8 +208,14 @@ section {
 /* About Section */
 
 .about {
-    align-content: center;
+    align-content: flex-start;
     min-height: 90vh;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+.container-about {
+    padding-top: 100px;
 }
 
 .about-grid {
@@ -213,7 +226,7 @@ section {
 
 .about-text p {
     font-size: 1.2rem;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
 }
 
 .about-text span {
@@ -250,9 +263,16 @@ section {
 }
 
 .photo--avatar {
+    position: absolute;
+    display: block;
     width: 400px;
-    height: 600px;
-    border-radius: 8px;
+    height: 1000px;
+    right: 0;
+    top: -100px;
+}
+
+.photo--avatar:hover {
+    transform: rotateY(180deg);
 }
 
 /* Experience Section */
@@ -336,7 +356,7 @@ section {
     grid-template-columns: 1fr;
     gap: 32px;
     margin-top: 64px;
-    margin-bottom: 60px;
+    margin-bottom: 400px;
 }
 
 .project-card {
@@ -347,7 +367,9 @@ section {
 
 .project-image {
     width: 100%;
+    max-width: 664px;
     height: 100%;
+    max-height: 384px;
     background-color: rgba(100, 255, 218, 0.1);
     border-radius: 8px;
 }
@@ -431,35 +453,43 @@ section {
 
 /* Contact Section */
 .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     max-width: 768px;
     margin: 0 auto;
     text-align: center;
+    min-height: 50vh;
 }
 
 .contact-subtitle {
     color: var(--primary);
     font-family: 'Fira Code', monospace;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .contact-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--light);
     margin-bottom: 24px;
 }
 
 .contact-description {
-    font-size: 1.125rem;
-    margin-bottom: 40px;
+    font-size: 1.4rem;
+    margin-bottom: 50px;
 }
 
 .contact-btn {
+    width: 300px;
     padding: 16px 32px;
     border: 1px solid var(--primary);
     color: var(--primary);
     font-family: 'Fira Code', monospace;
-    font-size: 0.875rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     text-decoration: none;
     transition: background-color 0.3s;
     display: inline-block;
@@ -468,7 +498,8 @@ section {
 }
 
 .contact-btn:hover {
-    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--dark);
+    background-color: var(--primary);
 }
 
 /* Footer */
@@ -480,13 +511,13 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 40px;
     margin-bottom: 24px;
 }
 
 .social-links a {
     color: var(--light);
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     transition: color 0.3s;
 }
 

@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap"
           rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <!-- Навигация -->
 <nav>
     <div class="nav-container container">
@@ -20,7 +23,7 @@
             <a href="#about" class="nav-link">Обо мне</a>
             <a href="#projects" class="nav-link">Проекты</a>
             <a href="#contact" class="nav-link">Контакты</a>
-            <a href="https://spb.hh.ru/resume/5d409c03ff0efd9fbf0039ed1f476b636b7031" class="resume-btn">Резюме</a>
+            <a href="https://spb.hh.ru/resume/5d409c03ff0efd9fbf0039ed1f476b636b7031" class="resume-btn" target="_blank">Резюме</a>
         </div>
     </div>
 </nav>
@@ -46,7 +49,10 @@
 
 <!-- Обо мне -->
 <section id="about" class="about">
-    <div class="container">
+    <div class="container container-about">
+        <div class="photo-container">
+            <img class="photo--avatar" src="assets/img/avatar.png" alt="avatar">
+        </div>
         <h2 class="section-title">
             <span>01.</span>Обо мне
         </h2>
@@ -63,8 +69,11 @@
                     реальную пользу пользователям. В процессе разработки для меня важны внимание к деталям, чистота кода
                     и постоянный рост.
                 </p>
-                <br>
-                <br>
+                <p>
+                    За пределами редактора кода я жгу виртуальные покрышки на автосимуляторе, погружаюсь в мир «Звездных войн»,
+                    наматываю километры на шоссейнике или задаю темп на беговой дорожке. Динамика, скорость и движение — мой источник вдохновения.
+                    Эти увлечения заряжают энергией, учат быстроте принятия решений, стратегии, выносливости и воображению — качествам, ценным для работы.
+                </p>
                 <p class="tech-title">Вот несколько технологий, с которыми я работаю:</p>
                 <div class="tech-grid">
                     <div class="tech-item">
@@ -92,10 +101,6 @@
                         <span>Git</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="photo-container">
-                <img class="photo--avatar" src="assets/img/avatar.jpg" alt="avatar">
             </div>
         </div>
     </div>
@@ -182,15 +187,15 @@
             <span>03.</span>Личные проекты
         </h2>
 
-        <div class="projects-grid">
+        <div class="projects-grid projects-grid__pet">
             <!-- Project 1 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img class="project-image--six-cities" src="assets/img/six-cities.jpg" alt="six-cities">
+                    <img class="project-image--flowboard" src="assets/img/flowboard.png" alt="flowboard">
                 </div>
-                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-six-cities-3">
+                <a class="project-overlay" href="https://github.com/SpikeJnR/flowboard">
                     <h3>Flowboard</h3>
-                    <p></p>
+                    <p>«Flowboard» - менеджер задач с возможностью создания карточек с дедлайнами и приоритетами (низкий, средний, высокий), гибким перемещением между тремя досками (To Do, In Progress, Done), переключением светлой и темной темы, а также безопасной авторизацией и регистрацией пользователей.</p>
                     <div class="project-tech">
                         <span>React</span>
                         <span>Typescript</span>
@@ -203,11 +208,11 @@
             <!-- Project 2 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img class="project-image--bit-trip" src="assets/img/big-trip.png" alt="big-trip">
+                    <img class="project-image--memory" src="assets/img/memory.png" alt="memory">
                 </div>
-                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-big-trip-2">
-                    <h3>Git flipper</h3>
-                    <p></p>
+                <a class="project-overlay" href="https://github.com/SpikeJnR/proj-memory">
+                    <h3>Memory</h3>
+                    <p>«Memory» — игра для тренировки визуальной памяти.</p>
                     <div class="project-tech">
                         <span>React</span>
                         <span>Typescript</span>
@@ -220,11 +225,11 @@
             <!-- Project 3 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img class="project-image--kekstagram" src="assets/img/kekstagram.jpg" alt="kekstagram">
+                    <img class="project-image--gitclone" src="assets/img/gitclone.png" alt="gitclone">
                 </div>
-                <a class="project-overlay" href="https://github.com/SpikeJnR/1779445-kekstagram-kvs">
-                    <h3>Memory</h3>
-                    <p></p>
+                <a class="project-overlay" href="https://github.com/SpikeJnR/git_clone_test">
+                    <h3>GitClone</h3>
+                    <p>«GitClone» - позволяет проверить github пользователя, дает возможность просмотра репозиториев, подписчиков и активных подписок.</p>
                     <div class="project-tech">
                         <span>React</span>
                         <span>JavaScript</span>
@@ -260,13 +265,13 @@
 <footer>
     <div class="container">
         <div class="social-links">
-            <a href="https://github.com/SpikeJnR" aria-label="GitHub">
+            <a href="https://github.com/SpikeJnR" aria-label="GitHub" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://t.me/Spike_zet" aria-label="Telegram">
+            <a href="https://t.me/Spike_zet" aria-label="Telegram" target="_blank">
                 <i class="fab fa-telegram"></i>
             </a>
-            <a href="mailto:spike.kvs@gmail.com" aria-label="Email">
+            <a href="mailto:spike.kvs@gmail.com" aria-label="Email" target="_blank">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
